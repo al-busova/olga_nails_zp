@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
             {/* <a href=""></a> */}
             <button type="button">Записатися</button>
           </div>
-          <img src={centerPhoto} alt="Майстриня Ольга Бусова" />
+          <img src={centerPhoto} alt="Майстриня Ольга Бусова" width={250}/>
         </div>
       </section>
       <section>

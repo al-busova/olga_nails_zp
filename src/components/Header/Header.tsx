@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
   return (
     <header>
       <div style={{
-        backgroundColor: "yellow",
+        backgroundColor: "pink",
       }}>
         <Link to="/">
           <Logo />
