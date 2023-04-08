@@ -1,9 +1,7 @@
-
-export const Logo: React.FC= () => {
-
+export const Logo: React.FC = () => {
   return (
     <>
-  <p>--busova_olga--</p>
+      <p>b.o</p>
     </>
   );
 };

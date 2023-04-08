@@ -1,44 +1,22 @@
-import centerPhoto from "../../static_images/master.png";
+import { Hero } from "../../components/Hero/Hero";
+import { Advantages } from "../../components/Advantages/Advantages";
+import { HomeSliderUseful } from "../../components/HomeSliderUseful/HomeSliderUseful";
+import { Reviews } from "../../components/Reviews/Reviews";
+import { Promotions } from "../../components/Promotions/Promotions";
+import { Container } from "@mui/material";
 
 const HomePage: React.FC = () => {
   return (
     <main>
+      <Hero />
+      <Advantages />
       <section>
-        <div>
-          <div>
-            <p>мастер манікюру та педикюру</p>
-            <h1>Ольга Бусова</h1>
-            <p>
-              Давай знайомитися! Я скурпельозна запорізьа майстриня. Зроблю для
-              тебе файні та неймовірні нігтики. В мене все стерильно та охайно.
-              Максимально в дружелюбній та приємній атмосфері зроблю красу твоїм
-              руцям та ніжкам. Чекаю в Заводському районі за адресою: вул.
-              Добровольчих батальонів 54
-                      </p>
-                      <p>Посилання на сертифікати та навчання</p>
-            {/* <a href=""></a> */}
-            <button type="button">Записатися</button>
-          </div>
-          <img src={centerPhoto} alt="Майстриня Ольга Бусова" width={250}/>
-        </div>
+        <Container>
+          <h3>Улюблені гіфки до/після</h3>
+        </Container>
       </section>
       <section>
-        <div>
-          <h3>
-            Переваги у вигляді таблиці "Чому обрати саме мене" (можна з
-            векторними картинками або имдж)
-          </h3>
-        </div>
-          </section>
-          <section>
-        <div>
-          <h3>
-           Улюблені гіфки до/після
-          </h3>
-        </div>
-      </section>
-      <section>
-        <div>
+        <Container>
           <h3>БЕЗПЕКА В КАРАНТИН</h3>
           <p>
             Ми дбаємо про твою безпеку, саме тому ми передбачили спеціальні
@@ -48,30 +26,17 @@ const HomePage: React.FC = () => {
             також дотримання всіх норм, рекомендованих у постанові МОЗ України
             №20 від 9.05.2020 р.
           </p>
-        </div>
+        </Container>
       </section>
+      <HomeSliderUseful />
       <section>
-        <div>
-          <h3>Слайдер з картками-посиланнями на корисне</h3>
-        </div>
-      </section>
-      <section>
-        <div>
+        <Container>
           <b>Залишилися питання? Подзвони мені +380661292554 або напиши</b>
           <button>Написати Олі</button>
-        </div>
+        </Container>
       </section>
-      <section>
-        <div>
-          <h3>Відгуки (інший вид слайдеру?)</h3>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h3>Акції</h3>
-          <p>Посилання на частину сторінки з деталями акцій</p>
-        </div>
-      </section>
+      <Reviews />
+      <Promotions />
     </main>
   );
 };
