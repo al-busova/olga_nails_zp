@@ -9,18 +9,18 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import photo4 from "../../static_images/hand_4.png";
+import photo4 from "../../static_images/hand_4.jpg";
 import { MasterHelpers } from "../../components/MasterHelpers/MasterHelpers";
 
 const UsefulPage: React.FC = () => {
   return (
     <main>
-      <section>
+      <Box sx={{pt:4}}>
         <Container>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid item md={6}>
-                <Card>
+                <Card sx={{minWidth:'320px'}}>
                   <CardMedia
                     sx={{ height: 240 }}
                     image={photo4}
@@ -209,7 +209,7 @@ const UsefulPage: React.FC = () => {
             </Container>
           </Box>
         </Container>
-      </section>
+      </Box>
     </main>
   );
 };

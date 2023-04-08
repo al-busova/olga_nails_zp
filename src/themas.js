@@ -3,13 +3,13 @@ export const theme = createTheme({
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
-      main: "#EBD2CD",
+      main: "#04BBEC",
       // dark: will be calculated from palette.primary.main,
-      // contrastText: will be calculated to contrast with palette.primary.main
+      contrastText: 'white',
     },
     secondary: {
       //   light: '#0066ff',
-      main: "#3B887B",
+      main: "#EA25B5",
       // dark: will be calculated from palette.secondary.main,
     //   contrastText: "#ffcc00",
     },

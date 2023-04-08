@@ -1,7 +1,7 @@
 export const Logo: React.FC = () => {
   return (
     <>
-      <p>b.o</p>
+      <p style={{color:'white', marginRight:10}}>  b.o  </p>
     </>
   );
 };

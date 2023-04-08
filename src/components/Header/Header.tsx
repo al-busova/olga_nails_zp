@@ -12,6 +12,7 @@ import {
   IconButton,
   Button,
   Menu,
+  Typography
 } from "@mui/material";
 import { Send } from "@mui/icons-material";
 
@@ -27,7 +28,7 @@ export const Header: React.FC = () => {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="static">
+    <AppBar position="static" color='transparent'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -59,7 +60,7 @@ export const Header: React.FC = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <Link to="gallery">Галерея</Link>
+            <Link to="gallery">Галерея</Link>
               <Link to="services">Послуги</Link>
               <Link to="useful">Корисне</Link>
             </Menu>
@@ -69,10 +70,10 @@ export const Header: React.FC = () => {
               <Logo />
             </Link>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Link to="gallery">Галерея</Link>
-            <Link to="services">Послуги</Link>
-            <Link to="useful">Корисне</Link>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, gap: 2 }}>
+           <Link to="gallery"><Typography color='white'>Галерея</Typography> </Link>
+            <Link to="services"><Typography color='white'>Послуги</Typography></Link>
+            <Link to="useful"><Typography color='white'>Корисне</Typography></Link>
           </Box>
           {/* <SocialLinks /> */}
           <Button variant="contained" color="secondary" endIcon={<Send />}>
