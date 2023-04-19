@@ -1,7 +1,9 @@
+import logo from '../../static_images/logo.png';
+
 export const Logo: React.FC = () => {
   return (
     <>
-      <p style={{color:'white', marginRight:10}}>  b.o  </p>
+      <img style={{ width:40, marginRight: 10 }} src={logo} alt='logo'/>
     </>
   );
 };

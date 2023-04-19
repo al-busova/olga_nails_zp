@@ -10,11 +10,10 @@ import {
   Toolbar,
   Box,
   IconButton,
-  Button,
   Menu,
   Typography
 } from "@mui/material";
-import { Send } from "@mui/icons-material";
+// import { Send } from "@mui/icons-material";
 
 export const Header: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -28,8 +27,8 @@ export const Header: React.FC = () => {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="static" color='transparent'>
-      <Container maxWidth="xl">
+    <AppBar position="static" sx={{backgroundColor:'white'}}>
+      <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -38,7 +37,6 @@ export const Header: React.FC = () => {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
             >
               <AiOutlineMenu />
             </IconButton>
@@ -71,14 +69,14 @@ export const Header: React.FC = () => {
             </Link>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, gap: 2 }}>
-           <Link to="gallery"><Typography color='white'>Галерея</Typography> </Link>
-            <Link to="services"><Typography color='white'>Послуги</Typography></Link>
-            <Link to="useful"><Typography color='white'>Корисне</Typography></Link>
+           <Link to="gallery"><Typography >Галерея</Typography> </Link>
+            <Link to="services"><Typography >Послуги</Typography></Link>
+            <Link to="useful"><Typography >Корисне</Typography></Link>
           </Box>
           {/* <SocialLinks /> */}
-          <Button variant="contained" color="secondary" endIcon={<Send />}>
+          {/* <Button variant="contained"  endIcon={<Send />}>
             Send
-          </Button>
+          </Button> */}
         </Toolbar>
       </Container>
     </AppBar>

@@ -1,25 +1,54 @@
 import { createTheme } from "@mui/material/styles";
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 320,
+      md: 768,
+      lg: 1200,
+      xl: 1536,
+    }
+  },
   palette: {
+    mode: 'light',
+    common: {
+      black: '#000',
+      white:'#fff',
+    },
     primary: {
-      // light: will be calculated from palette.primary.main,
-      main: "#04BBEC",
-      // dark: will be calculated from palette.primary.main,
+      main: "#1976d2",
+      light: '#42a5f5',
+      dark:'#1565c0',
       contrastText: 'white',
     },
     secondary: {
-      //   light: '#0066ff',
-      main: "#EA25B5",
-      // dark: will be calculated from palette.secondary.main,
-    //   contrastText: "#ffcc00",
+     main: "#d7537a",
+      light: '#ba68c8',
+      dark:'#7b1fa2',
+      contrastText: 'white',
     },
-    custom: {
-      //   light: '#ffa726',
-      main: "#f57c00",
-      //   dark: '#ef6c00',
-      //   contrastText: 'rgba(0, 0, 0, 0.87)',
+    text: {
+      primary: 'rgba(0,0,0,0.87)',
+      secondary: 'rgba(0,0,0,0.6)',
+      disabled: 'rgba(0,0,0,0.38)',
     },
-    contrastThreshold: 3,
-    tonalOffset: 0.2,
+    background: {
+      paper: '#fff',
+      default:'#fff',
+    }
   },
+  typography: {
+    fontFamily: "'Roboto', sans-serif",
+    fontSize: 16,
+    h1: {
+      fontSize: 72,
+      fontWeight:700,
+    },
+    h2: {
+      fontSize: 38,
+    },
+    h3: {
+      fontSize: 32,
+    },
+  }
 });
