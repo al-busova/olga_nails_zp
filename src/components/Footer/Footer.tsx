@@ -1,31 +1,28 @@
 import { Link } from "react-router-dom";
 import { SocialLinks } from "../SocialLinks/SocialLinks";
 import { Call } from "../Call/Call";
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
+import { FooterStyled, WrapperContentFooter, LinkGoogleMap } from "./Footer.styled";
 
 export const Footer: React.FC = () => {
   return (
-    <Box
-      component="footer"
-      style={{
-        backgroundColor: "gray",
-      }}
-    >
+    <FooterStyled component="footer">
       <Container>
-        <p> &#169; busova_olga_nails_zp </p>
-        <p>карта та посилання на гуггл мепс щоб знайти по мітці</p>
-        <ul>
-          <li>
-            {" "}
-            <Link to="/services">прайс</Link>{" "}
-          </li>
-          <li>
-            <Link to="/useful">корисне про догляд</Link>
-          </li>
-        </ul>
-        <Call />
-        <SocialLinks />
+        <WrapperContentFooter>
+          <ul>
+            <li>
+              <Link to="/services">прайс</Link>{" "}
+            </li>
+            <li>
+              <Link to="/useful">корисне про догляд</Link>
+            </li>
+          </ul>
+          <Call />
+          <SocialLinks />
+            <p> &#169; busova_olga_nails_zp </p>
+        </WrapperContentFooter>
+        <LinkGoogleMap href="https://goo.gl/maps/Ka4wHVFhxX2Y5RFz9" target="_blank" rel="noreferrer">Оля тут</LinkGoogleMap>
       </Container>
-    </Box>
+    </FooterStyled>
   );
 };

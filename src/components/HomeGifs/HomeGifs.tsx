@@ -8,6 +8,7 @@ export const HomeGifs: React.FC = () => {
         <SectionTitle>
           Улюблені гіфки до/після
         </SectionTitle>
+         
       </Container>
     </Box>
   );
