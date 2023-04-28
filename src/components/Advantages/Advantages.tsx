@@ -12,7 +12,9 @@ export const Advantages: React.FC = () => {
         </SectionTitle>
         <Grid container spacing={2}>
           <Grid item md={6} sx={{ textAlign: "center" }}>
-            <AdvantageItem>Стерильно та комфортно</AdvantageItem>
+            <AdvantageItem>
+             Стерильно та комфортно
+            </AdvantageItem>
           </Grid>
           <Grid item md={6} sx={{ textAlign: "center" }}>
             <AdvantageItem>Якісно</AdvantageItem>

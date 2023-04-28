@@ -9,7 +9,7 @@ import {
   CardActions,
   Button,
 } from "@mui/material";
-import photo4 from "../../static_images/hand_4.jpg";
+import photo4 from "../../static_images/4.jpg";
 import { MasterHelpers } from "../../components/MasterHelpers/MasterHelpers";
 
 const UsefulPage: React.FC = () => {

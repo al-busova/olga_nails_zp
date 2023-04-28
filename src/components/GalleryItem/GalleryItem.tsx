@@ -1,4 +1,5 @@
 import React from "react";
+import { ImageItem } from "./GalleryItem.styled";
 interface IPhoto {
   photo: string;
   description: string;
@@ -7,7 +8,7 @@ interface IPhoto {
 export const GalleryItem: React.FC<IPhoto> = ({ photo, description }) => {
   return (
     <>
-      <img src={photo} alt={description} width="200px" />
+      <ImageItem src={photo} alt={description} />
     </>
   );
 };

@@ -1,11 +1,17 @@
-import  photo1  from "../static_images/hand_1.png";
-import  photo2  from "../static_images/hand_2.png";
-import  photo3  from "../static_images/hand_3.png";
-import  photo4  from "../static_images/hand_4.jpg";
-import  photo5  from "../static_images/hand_5.png";
-import  photo6  from "../static_images/hand_6.png";
-import  photo7  from "../static_images/hand_7.png";
-import  photo8  from "../static_images/hand_8.png";
+import photo1 from "../static_images/1.webp";
+import photo2 from "../static_images/2.webp";
+import photo3 from "../static_images/3.webp";
+import photo4 from "../static_images/4.jpg";
+import photo5 from "../static_images/5.webp";
+import photo6 from "../static_images/6.webp";
+import photo7 from "../static_images/7.webp";
+import photo8 from "../static_images/8.jpg";
+import photo9 from "../static_images/9.jpg";
+import photo10 from "../static_images/10.webp";
+import photo11 from "../static_images/11.webp";
+import photo12 from "../static_images/12.webp";
+import photo13 from "../static_images/13.webp";
+import photo14 from "../static_images/14.jpg";
 
 export const arrPhoto = () => {
   return [
@@ -17,5 +23,11 @@ export const arrPhoto = () => {
     { photo: photo6, id: 6, description: "design nails" },
     { photo: photo7, id: 7, description: "design nails" },
     { photo: photo8, id: 8, description: "design nails" },
+    { photo: photo9, id: 9, description: "design nails" },
+    { photo: photo10, id: 10, description: "design nails" },
+    { photo: photo11, id: 11, description: "design nails" },
+    { photo: photo12, id: 12, description: "design nails" },
+    { photo: photo13, id: 13, description: "design nails" },
+    { photo: photo14, id: 14, description: "design nails" },
   ];
 };
