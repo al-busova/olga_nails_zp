@@ -18,7 +18,7 @@ export const WrapperContentFooter = styled.div`
 padding: 20px;
 border-radius: 20px;
 background-color: #d7537a;
-width: 400px;
+width: 300px;
 height: 80%;
 position: absolute;
 top:50px;

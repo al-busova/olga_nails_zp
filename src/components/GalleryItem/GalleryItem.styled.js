@@ -3,8 +3,8 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShareIcon from "@mui/icons-material/Share";
 
 export const ImageItem = styled.img`
-width: 200px;
-height: 300px;
+width: 250px;
+height: 320px;
 object-fit: cover;
 `;
 

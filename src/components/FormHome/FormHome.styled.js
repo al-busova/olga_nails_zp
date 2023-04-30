@@ -34,6 +34,7 @@ gap: 6px;
 align-items: center;
 `;
 export const InputStyled = styled.input`
+max-width: 300px;
 border-radius: 20px;
 padding: 12px 20px;
 `;
