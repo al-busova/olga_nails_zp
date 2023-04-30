@@ -1,6 +1,7 @@
 import { Box, Button, Container } from "@mui/material";
 import centerPhoto from "../../static_images/master.png";
 import { OverTitle, MainTitle, DescriptionHero, Address } from "./Hero.styled";
+import IconButton from "@mui/material/IconButton";
 import { LocationOn } from "@mui/icons-material";
 // import { Container } from "../common/Container.styled";
 
@@ -16,44 +17,48 @@ export const Hero: React.FC = () => {
             alignItems: "center",
           }}
         >
-          <div style={{padding:10}}>
+          <div style={{ padding: 10 }}>
             <OverTitle>Майстер манікюру та педикюру</OverTitle>
             <MainTitle>Ольга Бусова</MainTitle>
             <DescriptionHero>
-              Познайомимося! Я скурпельозна запорізька майстриня. Зроблю для
-              тебе файні та неймовірні нігтики. В мене все стерильно та охайно.
-              Максимально в дружелюбній та приємній атмосфері зроблю красу твоїм
-              руцям та ніжкам. Чекаю в Заводському районі за адресою:
+              Вітаю! Я скурпельозна запорізька майстриня. Зроблю для тебе файні
+              та неймовірні нігтики. В мене все стерильно та охайно. Максимально
+              в дружелюбній та приємній атмосфері зроблю красу твоїм руцям та
+              ніжкам. Чекаю в Заводському районі за адресою:
             </DescriptionHero>
             <Box
               sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent:'space-between',
+                // display: { xs: "block", md: "flex" },
+                // alignItems: "center",
+                // justifyContent: 'space-between',
+                textAlign: { xs: "center", md:'left'},
               }}
             >
-              <div>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <LocationOn />
-                  <Address>вул. Добровольчих батальонів 54</Address>
-                </Box>
-                <p style={{ marginBottom: 12, marginTop: 12 }}>
-                  Посилання на сертифікати та навчання
-                </p>
-              </div>
-              <Button variant="contained" color="secondary" sx={{
-                mr:12, borderRadius: 40
-              }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: { xs: "center", md:'flex-start'},
+                  mb: "12px",
+                }}
+              >
+                <IconButton>
+                  <LocationOn color="primary" />
+                </IconButton>
+                <Address>вул. Добровольчих батальонів, 54</Address>
+              </Box>
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{
+                  borderRadius: 40, ml:{md:'14px'}, 
+                }}
+              >
                 Записатися
               </Button>
             </Box>
           </div>
-          <img src={centerPhoto} alt="Майстриня Ольга Бусова" width={380} />
+          <img src={centerPhoto} alt="Майстриня Ольга Бусова" width={360} />
         </Box>
       </Container>
     </Box>

@@ -1,7 +1,7 @@
 import { Hero } from "../../components/Hero/Hero";
 import { Advantages } from "../../components/Advantages/Advantages";
 import { HomeSliderUseful } from "../../components/HomeSliderUseful/HomeSliderUseful";
-import { FormHome } from "../../components/FormHome/FormHome";
+// import { FormHome } from "../../components/FormHome/FormHome";
 import { Reviews } from "../../components/Reviews/Reviews";
 
 const HomePage: React.FC = () => {
@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
       <Advantages />
       {/* <HomeGifs /> */}
       <HomeSliderUseful />
-      <FormHome />
+      {/* <FormHome /> */}
       <Reviews />
       {/* <Promotions /> */}
     </main>
