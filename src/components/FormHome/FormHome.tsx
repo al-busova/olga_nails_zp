@@ -1,16 +1,16 @@
 import { Box, Container, Button} from "@mui/material";
 import collageFormHome from "../../static_images/collageFormHome.jpg";
-import { FormSimple, InputStyled, LabelStyled  } from "./FormHome.styled";
+import { FormSimple,FormImage, InputStyled, LabelStyled  } from "./FormHome.styled";
 
 export const FormHome: React.FC = () => {
   return (
       <Box
         component="section"
-        sx={{ pt: 4, pb: 4, backgroundColor: "#d7537a" }}
+        sx={{ pt: 4, pb: 4, backgroundColor: "rgba(215,83,122,0.8)" }}
       >
         <Container>
           <Box sx={{ display: "flex", gap: 2, alignItems:'center' }}>
-            <img src={collageFormHome} alt="collage" width={500} />
+            <FormImage src={collageFormHome} alt="collage" />
             <div style={{width:'100%'}}>
               <FormSimple>
                 <b>Є питання?</b>

@@ -15,19 +15,19 @@ import photo14 from "../static_images/14.jpg";
 
 export const arrPhoto = () => {
   return [
-    { photo: photo1, id: 1, description: "design nails" },
-    { photo: photo2, id: 2, description: "design nails" },
-    { photo: photo3, id: 3, description: "design nails" },
-    { photo: photo4, id: 4, description: "design nails" },
-    { photo: photo5, id: 5, description: "design nails" },
-    { photo: photo6, id: 6, description: "design nails" },
-    { photo: photo7, id: 7, description: "design nails" },
-    { photo: photo8, id: 8, description: "design nails" },
-    { photo: photo9, id: 9, description: "design nails" },
-    { photo: photo10, id: 10, description: "design nails" },
-    { photo: photo11, id: 11, description: "design nails" },
-    { photo: photo12, id: 12, description: "design nails" },
-    { photo: photo13, id: 13, description: "design nails" },
-    { photo: photo14, id: 14, description: "design nails" },
+    { photo: photo1, id: 1, description: "design nails ", technology:'french', shape: 'oval' },
+    { photo: photo2, id: 2, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo3, id: 3, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo4, id: 4, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo5, id: 5, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo6, id: 6, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo7, id: 7, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo8, id: 8, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo9, id: 9, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo10, id: 10, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo11, id: 11, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo12, id: 12, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo13, id: 13, description: "design nails", technology:'french', shape: 'oval' },
+    { photo: photo14, id: 14, description: "design nails", technology:'french', shape: 'oval' },
   ];
 };

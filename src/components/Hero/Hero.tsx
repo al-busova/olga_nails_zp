@@ -7,7 +7,7 @@ import { LocationOn } from "@mui/icons-material";
 
 export const Hero: React.FC = () => {
   return (
-    <Box component="section" sx={{ pt: 4 }}>
+    <Box component="section" sx={{ pt: 4, backgroundColor: "rgba(215,83,122,0.8)"  }}>
       <Container>
         <Box
           sx={{
@@ -49,7 +49,6 @@ export const Hero: React.FC = () => {
               </Box>
               <Button
                 variant="contained"
-                color="secondary"
                 sx={{
                   borderRadius: 40, ml:{md:'14px'}, 
                 }}

@@ -11,10 +11,13 @@ export const Footer: React.FC = () => {
         <WrapperContentFooter>
           <ul>
             <li>
-              <Link to="/services">прайс</Link>{" "}
+              <Link to="/services">Прайс</Link>{" "}
             </li>
             <li>
-              <Link to="/useful">корисне про догляд</Link>
+              <Link to="/useful">Корисні статті</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Галерея</Link>
             </li>
           </ul>
           <Call />

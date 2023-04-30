@@ -16,6 +16,16 @@ font-size: 36px;
 line-height: 119.18%;
 color: rgba(0, 0, 0, 0.54);
 `;
+export const FormImage = styled.img`
+display: none;
+@media screen and (min-width:768px) {
+display: block;
+width:350px;
+}
+@media screen and (min-width:1200px) {
+width:500px;
+}
+`;
 
 export const LabelStyled = styled.label`
 display: flex;

@@ -20,7 +20,7 @@ font-weight: 700;
 font-size: 46px;
 line-height: 1.16;
 letter-spacing: 0.05em;
-color: #272626;
+color: white;
 @media screen and (min-width:1200px) {
 font-size: 72px;
 line-height: 1.18;
