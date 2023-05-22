@@ -43,7 +43,7 @@ line-height: 1.67;
 export const Address = styled.p`
 margin-left:4px;
 font-weight: 500;
-font-size: 17px;
+font-size: 14.5px;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: #272626;

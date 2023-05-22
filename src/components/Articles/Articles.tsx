@@ -12,10 +12,10 @@ import {
 import photo4 from "../../static_images/4.jpg";
 import { MasterHelpers } from "../../components/MasterHelpers/MasterHelpers";
 
-const UsefulPage: React.FC = () => {
+
+export const Articles: React.FC = () => {
   return (
-    <main>
-      <Box sx={{pt:4}}>
+         <Box sx={{pt:4}}>
         <Container>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
@@ -210,7 +210,5 @@ const UsefulPage: React.FC = () => {
           </Box>
         </Container>
       </Box>
-    </main>
   );
 };
-export default UsefulPage;

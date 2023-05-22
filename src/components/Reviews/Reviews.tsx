@@ -11,7 +11,7 @@ export const Reviews: React.FC = () => {
             {reviews.map((item) => (
               <Grid
                 item
-                key={item.id}
+                // key={item.id}
                 md={4}
                 sx={{ outline: "1px solid pink" }}
               >

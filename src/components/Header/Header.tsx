@@ -11,7 +11,7 @@ import {
   Box,
   IconButton,
   Menu,
-  Typography
+  Typography,
 } from "@mui/material";
 // import { Send } from "@mui/icons-material";
 
@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="static" sx={{backgroundColor:'white'}}>
+    <AppBar position="static" sx={{ backgroundColor: "white" }}>
       <Container maxWidth="lg">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -58,9 +58,19 @@ export const Header: React.FC = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-            <Link to="gallery">Галерея</Link>
+              <Link to="gallery">Галерея</Link>
               <Link to="services">Послуги</Link>
-              <Link to="useful">Корисне</Link>
+              {/* <button>Корисне</button> */}
+              <div>
+                <ul>
+                  <li>
+                    <Link to="helpers">Помічники</Link>
+                  </li>
+                  <li>
+                    <Link to="articles">Статті</Link>
+                  </li>
+                </ul>
+              </div>
             </Menu>
           </Box>
           <Box>
@@ -68,10 +78,27 @@ export const Header: React.FC = () => {
               <Logo />
             </Link>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, gap: 2 }}>
-           <Link to="gallery"><Typography >Галерея</Typography> </Link>
-            <Link to="services"><Typography >Послуги</Typography></Link>
-            <Link to="useful"><Typography >Корисне</Typography></Link>
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, gap: 2 }}
+          >
+            <Link to="gallery">
+              <Typography>Галерея</Typography>{" "}
+            </Link>
+            <Link to="services">
+              <Typography>Послуги</Typography>
+            </Link>
+              <Typography color='primary'>Корисне</Typography>
+              <div>
+                <ul>
+                  <li>
+                    <Link to="helpers">Помічники</Link>
+                  </li>
+                  <li>
+                    <Link to="articles">Статті</Link>
+                  </li>
+                </ul>
+            </div>
+            <Link to="register">Register</Link>
           </Box>
           {/* <SocialLinks /> */}
           {/* <Button variant="contained"  endIcon={<Send />}>

@@ -2,7 +2,7 @@ import { Hero } from "../../components/Hero/Hero";
 import { Advantages } from "../../components/Advantages/Advantages";
 import { HomeSliderUseful } from "../../components/HomeSliderUseful/HomeSliderUseful";
 import { FormHome } from "../../components/FormHome/FormHome";
-import { Reviews } from "../../components/Reviews/Reviews";
+// import { Reviews } from "../../components/Reviews/Reviews";
 
 const HomePage: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
       {/* <HomeGifs /> */}
       <HomeSliderUseful />
       <FormHome />
-      <Reviews />
+      {/* <Reviews /> */}
       {/* <Promotions /> */}
     </main>
   );

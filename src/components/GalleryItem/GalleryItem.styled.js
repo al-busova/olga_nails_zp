@@ -3,7 +3,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ShareIcon from "@mui/icons-material/Share";
 
 export const ImageItem = styled.img`
-width: 250px;
+width: 260px;
 height: 320px;
 object-fit: cover;
 `;
@@ -14,8 +14,8 @@ position: absolute;
 padding-bottom: 10px;
 top:16px;
 left: 16px;
-width: 200px;
-height: 300px;
+width: 260px;
+height: 320px;
 display: flex;
 align-items: flex-end;
 background-color: rgba(0,0,0,0.3);
