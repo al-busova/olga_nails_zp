@@ -1,74 +1,71 @@
-import { Formik } from "formik";
-import * as yup from "yup";
+// import { Formik } from "formik";
+// import * as yup from "yup";
 import { nanoid } from "nanoid";
+import { useState } from 'react';
 // import { useAppDispatch, useAppSelector } from "../../utils/hook";
 // import { registration } from "../../redux/auth/authOperations";
 // import { selectIsLoadingAuth } from "../../redux/auth/selectorsAuth";
-import {
-  Label,
-  Button,
-  FormFormik,
-  InputFormik,
-  ErrorText,
-} from "./RegisterPage.styled";
+// import {
+//   Label,
+//   Button,
+//   FormFormik,
+//   InputFormik,
+//   ErrorText,
+// } from "./RegisterPage.styled";
 
-interface IRegister {
-  email: string;
-  password: string;
-}
+// interface IRegister {
+//   email: string;
+//   password: string;
+// }
 
-const RegisterPage: React.FC = () => {
+const RegisterPage = () => {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const emailIdReg = nanoid();
   const passwordIdReg = nanoid();
   //   const isLoading = useSelector(selectIsLoadingAuth);
   //   const dispatch = useAppDispatch();
   //   const user = useAppSelector((state) => state.auth.user);
-  const schema = yup.object().shape({
-    email: yup.string().email().required(),
-    password: yup.string().min(7).max(16).required(),
-  });
+  // const schema = yup.object().shape({
+  //   email: yup.string().email().required(),
+  //   password: yup.string().min(7).max(16).required(),
+  // });
 
-  const initialValues: IRegister = {
-    email: "",
-    password: "",
+  // const initialValues: IRegister = {
+  //   email: "",
+  //   password: "",
+  // };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(email, password);
   };
 
-    const handleSubmit = (): void => {
-       console.log('sjbfhj');
-    };
-
   return (
-      <main>
-          <p>hello</p>
-      {/* <Formik
-        initialValues={initialValues}
-        validationSchema={schema}
-        onSubmit={handleSubmit}
-      >
-        <FormFormik autoComplete="off">
-          <Label htmlFor={emailIdReg}>
-            <span>Email</span>
-            <InputFormik
-              id={emailIdReg}
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-            />
-          </Label>
-          <ErrorText name="email" component="p" />
-          <Label htmlFor={passwordIdReg}>
-            <span>Password</span>
-            <InputFormik
-              id={passwordIdReg}
-              type="password"
-              name="password"
-              placeholder="Create password"
-            />
-          </Label>
-          <ErrorText name="password" component="p" />
-          <Button type="submit">Register</Button>
-        </FormFormik>
-      </Formik> */}
+    <main>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor={emailIdReg}>
+          <span>Email</span>
+          <input
+            id={emailIdReg}
+            type="email"
+            name="email"
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+          />
+        </label>
+        <label htmlFor={passwordIdReg}>
+          <span>Password</span>
+          <input
+            id={passwordIdReg}
+            type="password"
+            name="password"
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Create password"
+          />
+        </label>
+        <button type="submit">Register</button>
+      </form>
     </main>
   );
 };

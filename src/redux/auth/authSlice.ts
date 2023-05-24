@@ -76,7 +76,16 @@ const authSlice = createSlice({
     //   state.error = action.payload;
     // },
   },
+  // extraReducers: {
+  //     [registration.fulfilled](state, action: PayloadAction<ActionPayload>) {
+  //     state.user = action.payload.user;
+  //     state.token = action.payload.token;
+  //     state.isLoggedIn = true;
+  //     state.isLoading = false;
+  //     state.error = null;
+  //   },
+  // }
 });
 export const authReducer = authSlice.reducer;
-export const { registration } = authSlice.actions
+// export const { registration } = authSlice.actions
 export const selectAuth = (state: RootState) => state.auth

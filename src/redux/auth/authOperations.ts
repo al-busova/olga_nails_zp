@@ -15,7 +15,7 @@ const token = {
 
 export const registration = createAsyncThunk(
   'auth/registration',
-  async (credentials, thunkAPI) => {
+  async (credentials: { email: string; password: string}, thunkAPI) => {
     try {
       const response = await axios.post('/users/register', credentials);
       // toast('Сongratulations, you are registered!');
@@ -27,7 +27,6 @@ export const registration = createAsyncThunk(
     }
   }
 );
-
 // export const logIn = createAsyncThunk(
 //   'auth/login',
 //   async (credentials, thunkAPI) => {
