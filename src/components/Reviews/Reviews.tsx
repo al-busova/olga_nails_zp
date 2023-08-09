@@ -1,32 +1,34 @@
-import { Box, Container,  Grid } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import FaceIcon from "@mui/icons-material/Face";
 import reviews from "../../utils/reviews.json";
+import { nanoid } from "nanoid";
+import { NameUser, TextReview } from './Reviews.styled';
 
 export const Reviews: React.FC = () => {
   return (
     <Box component="section" sx={{ pt: 4 }}>
       <Container>
         {reviews.length > 0 && (
-          <Grid container spacing={2} sx={{ mr: "auto", ml: "auto" }}>
+          <Grid container spacing={6} sx={{ mr: "auto", ml: "auto" }}>
             {reviews.map((item) => (
               <Grid
                 item
-                // key={item.id}
+                key={nanoid()}
                 md={4}
-                sx={{ outline: "1px solid pink" }}
+                // sx={{ outline: "1px solid pink" }}
               >
                 <Box
                   sx={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "flex-start",
+                    gap:'10px'
                   }}
                 >
                   <FaceIcon />
-                  <p>{item.user}</p>
+                  <NameUser >{item.user}</NameUser>
                 </Box>
-
-                <p>{item.review}</p>
+                <TextReview>{item.review}</TextReview>
               </Grid>
             ))}
           </Grid>
